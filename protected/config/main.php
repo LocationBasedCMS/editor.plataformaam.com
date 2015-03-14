@@ -73,16 +73,6 @@ return array(
                  */
 		// uncomment the following to use a MySQL database
 		'db'=>require  Yii::app()->basePath.'/opt/editor.plataformaam.com/config.php' ,
-                /*    
-		'dbWSCentral'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=db_teste',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'amadis',
-			'charset' => 'utf8',
-		),
-                 * 
-                 */
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
