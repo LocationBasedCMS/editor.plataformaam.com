@@ -30,7 +30,7 @@ abstract class BaseVirtualSpace extends GxActiveRecord {
 	}
 
 	public static function label($n = 1) {
-		return Yii::t('app', 'Espaço Virtuai|Espaços Virtuais', $n);
+		return Yii::t('app', 'Espaço Virtual|Espaços Virtuais', $n);
 	}
 
 	public static function representingColumn() {
