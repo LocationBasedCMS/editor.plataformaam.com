@@ -84,7 +84,7 @@
 
 	<?php echo $form->errorSummary($model); ?>
         <div class="row-fluid">
-            <div class="span4">
+            <div class="span3">
                     <div class="row">
                     <?php echo $form->labelEx($model,'name'); ?>
                     <?php echo $form->textField($model, 'name', array('maxlength' => 100)); ?>
@@ -111,7 +111,7 @@
                     <?php echo $form->error($model,'stopLongitude'); ?>
                     </div><!-- row -->
             </div>                
-            <div class="span6">
+            <div class="span7">
                  <div id="map">
                     <div id="map_canvas" style="width:100%; height:400px"></div>
                     <div id="crosshair"></div>
@@ -122,7 +122,7 @@
                 $gMap = new EGMap();
                 $gMap->setJsName('virtual_space_map');
                 $gMap->width = '100%';
-                $gMap->height = 300;
+                $gMap->height = 450;
                 $gMap->zoom = 10;
                 
                 //Posição inicial do mapa 
