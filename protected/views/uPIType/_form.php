@@ -19,9 +19,9 @@
 		<?php echo $form->error($model,'name'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleResponseOfs')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleResponseOfs')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'uPIAggregationRuleResponseOfs', GxHtml::encodeEx(GxHtml::listDataEx(UPIAggregationRuleResponseOf::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleStarts')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleStarts')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'uPIAggregationRuleStarts', GxHtml::encodeEx(GxHtml::listDataEx(UPIAggregationRuleStart::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php

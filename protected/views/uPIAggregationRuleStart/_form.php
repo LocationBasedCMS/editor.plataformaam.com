@@ -59,11 +59,11 @@
 		<?php echo $form->error($model,'isSingleton'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleResponseOfs')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleResponseOfs')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'uPIAggregationRuleResponseOfs', GxHtml::encodeEx(GxHtml::listDataEx(UPIAggregationRuleResponseOf::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleResponseOfs1')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleResponseOfs1')); ?></label>
 		<?php echo $form->checkBoxList($model, 'uPIAggregationRuleResponseOfs1', GxHtml::encodeEx(GxHtml::listDataEx(UPIAggregationRuleResponseOf::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComUPIAggregationRuleStarts')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComUPIAggregationRuleStarts')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComUPIAggregationRuleStarts', GxHtml::encodeEx(GxHtml::listDataEx(VComUPIAggregationRuleStart::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php

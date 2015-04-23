@@ -39,9 +39,9 @@
 		<?php echo $form->error($model,'isExcluded'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComUserRoles')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComUserRoles')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComUserRoles', GxHtml::encodeEx(GxHtml::listDataEx(VComUserRole::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComComposites')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComComposites')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComComposites', GxHtml::encodeEx(GxHtml::listDataEx(VComComposite::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php

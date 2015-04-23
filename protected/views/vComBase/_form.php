@@ -34,7 +34,7 @@
 		<?php echo $form->error($model,'virtualspace'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleStarts')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleStarts')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'uPIAggregationRuleStarts', GxHtml::encodeEx(GxHtml::listDataEx(UPIAggregationRuleStart::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php

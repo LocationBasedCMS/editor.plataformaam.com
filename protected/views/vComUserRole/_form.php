@@ -44,11 +44,11 @@
 		<?php echo $form->error($model,'isClientSelectable'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('users')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('users')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'users', GxHtml::encodeEx(GxHtml::listDataEx(User::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComUPIAggregationRuleResponseOfs')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComUPIAggregationRuleResponseOfs')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComUPIAggregationRuleResponseOfs', GxHtml::encodeEx(GxHtml::listDataEx(VComUPIAggregationRuleResponseOf::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComUPIAggregationRuleStarts')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComUPIAggregationRuleStarts')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComUPIAggregationRuleStarts', GxHtml::encodeEx(GxHtml::listDataEx(VComUPIAggregationRuleStart::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php

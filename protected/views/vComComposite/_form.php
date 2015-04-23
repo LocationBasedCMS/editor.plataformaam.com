@@ -39,11 +39,11 @@
 		<?php echo $form->error($model,'createruser'); ?>
 		</div><!-- row -->
 
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComBases')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComBases')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComBases', GxHtml::encodeEx(GxHtml::listDataEx(VComBase::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComComposites')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComComposites')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComComposites', GxHtml::encodeEx(GxHtml::listDataEx(VComComposite::model()->findAllAttributes(null, true)), false, true)); ?>
-		<label><?php echo GxHtml::encode($model->getRelationLabel('vComUserRoles')); ?></label>
+		<h3><?php echo GxHtml::encode($model->getRelationLabel('vComUserRoles')); ?></h3>
 		<?php echo $form->checkBoxList($model, 'vComUserRoles', GxHtml::encodeEx(GxHtml::listDataEx(VComUserRole::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php
