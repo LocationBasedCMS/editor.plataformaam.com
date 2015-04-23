@@ -41,6 +41,13 @@ array(
 	foreach($model->uPIAggregationRuleStarts as $relatedModel) {
 		echo GxHtml::openTag('li');
 		echo GxHtml::link(GxHtml::encode(GxHtml::valueEx($relatedModel)), array('uPIAggregationRuleStart/view', 'id' => GxActiveRecord::extractPkValue($relatedModel, true)));
+                echo GxHtml::openTag('ul');
+                    foreach($relatedModel->uPIAggregationRuleResponseOfs as $relatedModel2) {
+                        echo GxHtml::openTag('li');
+                        echo GxHtml::link(GxHtml::encode(GxHtml::valueEx($relatedModel2)), array('uPIAggregationRuleResponseOf/view', 'id' => GxActiveRecord::extractPkValue($relatedModel2, true)));
+                        echo GxHtml::openTag('ul');
+                    }
+                echo GxHtml::closeTag('ul');
 		echo GxHtml::closeTag('li');
 	}
 	echo GxHtml::closeTag('ul');
