@@ -36,7 +36,7 @@ array(
 )); ?>
 
 <h3><?php echo GxHtml::encode($model->getRelationLabel('uPIAggregationRuleStarts')); ?>
-    <small><?php echo CHtml::link('Clique para adicionar',array('uPIAggregationRuleStart/create')); ?></small>
+    <small><strong><?php echo CHtml::link('+criar',array('uPIAggregationRuleStart/create')); ?></strong></small>
 </h3>
 <?php
 	echo GxHtml::openTag('ul');
@@ -47,7 +47,13 @@ array(
                 if( $relatedModel->uPIAggregationRuleResponseOfs != null ){
                     echo GxHtml::openTag('ul');
                     echo GxHtml::openTag('li');
-                    echo '<strong>'.GxHtml::encode($relatedModel->getRelationLabel('uPIAggregationRuleResponseOfs')).'</strong>';
+                    echo '<strong>'.
+                            GxHtml::encode($relatedModel->getRelationLabel('uPIAggregationRuleResponseOfs')).
+                            '<small>'.
+                            CHtml::link(' +criar ',array('uPIAggregationRuleResponseOf/create')). 
+                            '</small>'.
+                            '</strong>';
+                    
                     echo GxHtml::closeTag('li');
                     foreach($relatedModel->uPIAggregationRuleResponseOfs as $relatedModel2) {
                         echo GxHtml::openTag('li');
