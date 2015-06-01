@@ -28,7 +28,7 @@ return array(
     
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-                //TODO : Eliminar o gii
+                
                 /*
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
@@ -39,9 +39,9 @@ return array(
                     
 			'password'=>'ogiiresolveporra',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('192.168.1.*','::1'),
+			'ipFilters'=>array('192.168.*','::1'),
 		),
-                 */
+                */
                  
 	),
 
