@@ -28,7 +28,7 @@ array(
 <div class="row-fluid">
     <div class="span4">
 
-        <h2><?php echo GxHtml::encode($model->getRelationLabel('vComComposites')); ?></h2>
+        <h3><?php echo GxHtml::encode($model->getRelationLabel('vComComposites')); ?></h3>
 <?php
 	echo GxHtml::openTag('ul');
 	foreach($model->vComComposites as $relatedModel) {
@@ -40,7 +40,7 @@ array(
 	echo GxHtml::closeTag('ul');
 ?>
 
-<h2><?php echo GxHtml::encode($model->getRelationLabel('vComBases')); ?></h2>
+<h3><?php echo GxHtml::encode($model->getRelationLabel('vComBases')); ?></h3>
 <?php
 	echo GxHtml::openTag('ul');
         $arrayvComBases = $model->getRecursiveVComBases();
@@ -53,7 +53,7 @@ array(
 	echo GxHtml::closeTag('ul');
 ?>
 
-<h2><?php echo GxHtml::encode($model->getRelationLabel('vComUserRoles')); ?></h2>
+<h3><?php echo GxHtml::encode($model->getRelationLabel('vComUserRoles')); ?></h3>
 <?php
 	echo GxHtml::openTag('ul');
 	foreach($model->vComUserRoles as $relatedModel) {
